@@ -16,7 +16,5 @@ pipeline {
         bat 'C:/apache-maven-3.9.5/bin/mvn package'
       }
     }
-
-    }
   }
 }
