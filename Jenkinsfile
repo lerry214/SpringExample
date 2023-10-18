@@ -3,17 +3,17 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'mvn clean'
+        bat 'C:/apache-maven-3.9.5/bin/mvn clean'
       }
     }
     stage('Test') {
       steps {
-        bat 'mvn test'
+        bat 'C:/apache-maven-3.9.5/bin/mvn test'
       }
     }
     stage('Deploy') {
       steps {
-        bat 'mvn package'
+        bat 'C:/apache-maven-3.9.5/bin/mvn package'
       }
     }
     stage('report') {
